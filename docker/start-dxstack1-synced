@@ -13,9 +13,15 @@ echo etc location: $DX_VOLUME_ETC
 echo data source location: $DX_VOLUME_DATASOURCE
 echo synced source location: $DX_DIR_DATASYNCED
 
+sh lsyncd/start.sh
+sh phpmyadmin/start.sh
 sh php-fpm/start.sh
 sh nginx/start.sh
+#sh redis/start.sh
+sh memcached/start.sh
+sh mariadb/start.sh
 
+rm -R /docker/*
 
 # start a foreground process to keep the container running
 exec bash --login

@@ -1,0 +1,59 @@
+#
+# These groups are read by MariaDB server.
+# Use it for options that only the server (but not clients) should see
+#
+# See the examples of server my.cnf files in /usr/share/mysql/
+#
+
+# this is read by the standalone daemon and embedded servers
+[server]
+
+
+# this is only for the mysqld standalone daemon
+[mysqld]
+log_error = /var/log/mysql/error.log
+
+# Skip reverse DNS lookup of clients
+skip-name-resolve
+
+
+
+# allow for more storage engines
+innodb_file_format=Barracuda
+
+
+# disable binlog (not a master), this is set in the 4g config..
+log-bin=
+#expire_logs_days = 10
+#max_binlog_size = 100M
+expire_logs_days = 5
+
+# large query cache
+query-cache-size=128M
+
+
+# 20160127 we are going to keep sessions in a memory table.. (was 16m). a session table may easily be 16meg!
+tmp_table_size=512M
+max_heap_table_size=512M
+
+#query_cache_type
+#query_cache_limit
+#query_cache_size
+
+
+
+# this is only for embedded server
+[embedded]
+
+# This group is only read by MariaDB servers, not by MySQL.
+# If you use the same .cnf file for MySQL and MariaDB,
+# you can put MariaDB-only options here
+[mariadb]
+skip-blackhole
+
+
+# This group is only read by MariaDB-10.0 servers.
+# If you use the same .cnf file for MariaDB of different versions,
+# use this group for options that older servers don't understand
+[mariadb-10.0]
+

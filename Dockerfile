@@ -3,9 +3,9 @@ MAINTAINER info@24hoursmedia.com
 COPY /docker /docker
 WORKDIR /docker
 
-ENV DX_VOLUME_ETC="/opt/etc" DX_VOLUME_DATASOURCE="/opt/data-source" DX_DIR_DATASYNCED="/opt/data-synced"
+ENV DX_VOLUME_ETC="/opt/etc" DX_VOLUME_DATASOURCE="/opt/data-source" DX_DIR_DATASYNCED="/opt/data-synced" DX_PHPFPM_USER="www-data" DX_MYSQL_USER="developer" DX_MYSQL_PASSWORD=""
 
-
+RUN yum -y install lsyncd
 RUN sh setup.sh
 
 VOLUME ["${DX_VOLUME_ETC}", "${DX_VOLUME_DATASOURCE}"]
