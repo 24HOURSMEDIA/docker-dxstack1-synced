@@ -48,6 +48,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="/phpMyAdmin/">PHPMYADMIN</a></li>
+                <li><a href="/phpinfo.php">PHPINFO</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -70,6 +71,10 @@
             <tr>
                 <td>Server address:</td>
                 <td><?php echo htmlspecialchars($_SERVER['SERVER_ADDR']);?></td>
+            </tr>
+            <tr>
+                <td>Server port:</td>
+                <td><?php echo htmlspecialchars($_SERVER['SERVER_PORT']);?></td>
             </tr>
         </table>
 
