@@ -7,8 +7,9 @@ cat test-environment | ./parse_env.sh > /tmp/test_environment
 
 # create mountpoints
 mkdir -p $DX_VOLUME_ETC
-mkdir -p DX_VOLUME_DATASOURCE
+mkdir -p $DX_VOLUME_DATASOURCE
 mkdir -p $DX_DIR_DATASYNCED
+mkdir -p $DX_VOLUME_DATA
 
 adduser $DX_PHPFPM_USER
 
