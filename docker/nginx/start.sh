@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-nginx
+/etc/init.d/nginx start
