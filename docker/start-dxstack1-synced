@@ -3,16 +3,9 @@
 # note that the entrypoint of the parent image is not activated anymore
 
 echo "WELCOME TO DXSTACK1-SYNCED"
-echo "DXSTACK1-SYNCED" > /tmp/dxstack1-base
 
 
-
-
-
-echo etc location: $DX_VOLUME_ETC
-echo data source location: $DX_VOLUME_DATASOURCE
-echo synced source location: $DX_DIR_DATASYNCED
-
+sh webapp/start.sh
 sh lsyncd/start.sh
 sh phpmyadmin/start.sh
 sh php-fpm/start.sh
@@ -21,7 +14,10 @@ sh nginx/start.sh
 sh memcached/start.sh
 sh mariadb/start.sh
 
+
 rm -R /docker/*
+
+echo "All services started."
 
 # start a foreground process to keep the container running
 exec bash --login

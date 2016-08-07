@@ -2,27 +2,39 @@ server {
         listen       80 default_server;
         listen       [::]:80 default_server;
         server_name  _;
-        root         /usr/share/nginx/html;
+        #root         /usr/share/nginx/html;
+        root         /opt/webapp/htdocs;
 
         # Load configuration files for the default server block.
         include /etc/nginx/default.d/*.conf;
 
+        index  index.html index.htm index.php;
+
         location / {
+            index index.php index.html index.htm;
+            try_files $uri $uri/ =404;
+
         }
 
-        rewrite ^/phpmyadmin$ /phpMyAdmin/index.php last;
+        location ~ \.php$ {
+                        include /etc/nginx/fastcgi_params;
+                        fastcgi_index index.php;
+                        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                        fastcgi_pass 127.0.0.1:9000;
+        }
+
+
         rewrite ^/phpmyadmin/$ /phpMyAdmin/index.php last;
-        rewrite ^/phpmyadmin(.*)$ /phpMyAdmin$1 last;
-        rewrite ^/phpMyAdmin$ /phpMyAdmin/index.php last;
+        rewrite ^/phpmyadmin/(.*)$ /phpMyAdmin/$1 last;
         rewrite ^/phpMyAdmin/$ /phpMyAdmin/index.php last;
 
         location /phpMyAdmin {
             try_files $uri $uri/ =404;
-            alias /usr/share/phpMyAdmin/;
+            alias /opt/phpMyAdmin/;
             location ~ \.php$ {
                 include /etc/nginx/fastcgi_params;
                 fastcgi_index index.php;
-                fastcgi_param SCRIPT_FILENAME /usr/share/$fastcgi_script_name;
+                fastcgi_param SCRIPT_FILENAME /opt/$fastcgi_script_name;
                 fastcgi_pass 127.0.0.1:9000;
             }
         }
