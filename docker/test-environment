@@ -1,0 +1,3 @@
+test environment variables:
+${DX_VOLUME_ETC}
+${DX_VOLUME_SOURCE}

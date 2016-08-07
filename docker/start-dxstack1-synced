@@ -1,0 +1,21 @@
+#!/bin/bash
+# start script for container
+# note that the entrypoint of the parent image is not activated anymore
+
+echo "WELCOME TO DXSTACK1-SYNCED"
+echo "DXSTACK1-SYNCED" > /tmp/dxstack1-base
+
+
+
+
+
+echo etc location: $DX_VOLUME_ETC
+echo data source location: $DX_VOLUME_DATASOURCE
+echo synced source location: $DX_DIR_DATASYNCED
+
+sh php-fpm/start.sh
+sh nginx/start.sh
+
+
+# start a foreground process to keep the container running
+exec bash --login
