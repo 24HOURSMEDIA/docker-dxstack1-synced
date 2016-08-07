@@ -10,7 +10,7 @@ sh lsyncd/start.sh
 sh phpmyadmin/start.sh
 sh php-fpm/start.sh
 sh nginx/start.sh
-#sh redis/start.sh
+sh redis/start.sh
 sh memcached/start.sh
 sh mariadb/start.sh
 
