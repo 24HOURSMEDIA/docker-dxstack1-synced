@@ -7,4 +7,5 @@ source version.sh
 
 
 docker rm dxstack1_synced_test || echo ''
+#
 docker build .  -t 24hoursmedia/dxstack1-synced:$DXSTACK_VERSION && docker run --name=dxstack1_synced_test -p 11080:80 -v /Volumes/DATA24/docker-volumes/test/mysql:/var/lib/mysql -v /Volumes/DATA24/docker-volumes/test/data:/data -ti 24hoursmedia/dxstack1-synced:$DXSTACK_VERSION
