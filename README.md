@@ -1,6 +1,8 @@
 # docker-dxstack1-synced
 Docker DX Stack 1 Sync Edition
 
+[View the CHANGELOG](doc/changelog.md)
+
 ## Features
 
 * full php and db  centos7stack featuring nginx, php-fpm, mariadb, memcached, redis and more
