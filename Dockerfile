@@ -1,7 +1,7 @@
 FROM 24hoursmedia/dxstack1-base:v1.0
 MAINTAINER info@24hoursmedia.com
-COPY /docker /docker
-WORKDIR /docker
+COPY /docker /docker/dxstack1-synced
+WORKDIR /docker/dxstack1-synced
 
 ENV DX_VOLUME_MYSQL="/var/lib/mysql" DX_VOLUME_DATA="/data" DX_VOLUME_ETC="/opt/etc" DX_VOLUME_DATASOURCE="/opt/data-source" DX_DIR_DATASYNCED="/opt/data-synced" DX_PHPFPM_USER="www-data" DX_MYSQL_USER="developer" DX_MYSQL_PASSWORD="" DX_SYNC_USER="www-data" DX_SYNC_GROUP="www-data" DX_SYNC_PERMISSIONS="Fu=rw,Fg=r,Fo=,Du=rwx,Dg=rx,Do=rx"
 
