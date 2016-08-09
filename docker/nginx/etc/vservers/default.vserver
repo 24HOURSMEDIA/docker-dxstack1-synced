@@ -23,11 +23,10 @@ server {
                         fastcgi_pass unix:/var/run/php5fpm-www-default.sock;
         }
 
-
+        # phpymadmin
         rewrite ^/phpmyadmin/$ /phpMyAdmin/index.php last;
         rewrite ^/phpmyadmin/(.*)$ /phpMyAdmin/$1 last;
         rewrite ^/phpMyAdmin/$ /phpMyAdmin/index.php last;
-
         location /phpMyAdmin {
             try_files $uri $uri/ =404;
             alias /opt/phpMyAdmin/;
@@ -35,7 +34,7 @@ server {
                 include /etc/nginx/fastcgi_params;
                 fastcgi_index index.php;
                 fastcgi_param SCRIPT_FILENAME /opt/$fastcgi_script_name;
-                fastcgi_pass 127.0.0.1:9000;
+                fastcgi_pass unix:/var/run/php5fpm-www-default.sock;
             }
         }
 
