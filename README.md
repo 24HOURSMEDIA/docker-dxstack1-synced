@@ -4,7 +4,6 @@
 
 **[STAY UP TO DATE about this product - subscribe to our email updates](http://eepurl.com/caYXEH)**
 
-[View the CHANGELOG](doc/changelog.md) 
 
 **[Quickstart: set up a development stack from scratch](doc/examples/01-devstacksetup.md)**
 
@@ -22,6 +21,8 @@ The stack features NFS to local synced directories, boosting performance for com
 projects such as Symfony 2 and 3.
 
 [Available on Dockerhub](https://hub.docker.com/r/24hoursmedia/dxstack1-synced/)
+
+[View the CHANGELOG](doc/changelog.md) 
 
 ## For who is docker-dxstack1-synced?
 
