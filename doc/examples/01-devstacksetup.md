@@ -72,7 +72,7 @@ docker run --name=myproject -h=myproject.com \
 -v ~/docker/myproject/src:/opt/data-source \
 -v ~/docker/myproject/data:/data \
 -v ~/docker/myproject/etc:/opt/etc \
--ti 24hoursmedia/dxstack1-synced:v1.0-rc3
+-ti 24hoursmedia/dxstack1-synced:v1.0
 
 ```
 
