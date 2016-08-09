@@ -1,6 +1,8 @@
 # docker-dxstack1-synced
 Docker DX Stack 1 Sync Edition
 
+**[STAY UP TO DATE about this product - subscribe to our email updates](http://eepurl.com/caYXEH)**
+
 [View the CHANGELOG](doc/changelog.md)
 
 ## Features
