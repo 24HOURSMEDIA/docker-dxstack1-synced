@@ -5,11 +5,27 @@ Docker DX Stack 1 Sync Edition
 
 [View the CHANGELOG](doc/changelog.md)
 
+## What is docker-dxstack1-synced?
+
+A full stack of software running in a docker container mainly for php-developers. The stack contains
+nginx, php-fpm, mariadb i.e. mysql, redis and memcached running on centos 7.
+
+
+Your mysql and application data stay on the host, so you can easily discard the container (or replace with
+a new version) without data loss.
+
+### For who is docker-dxstack1-synced?
+
+* For advanced developers who know about docker, and how to configure nginx (and php-fpm)
+* Developers who want a full featured and high performance development stack isolated on their computer
+* Developers who want to their development environment to resemble an actual server
+
+
 ## Examples - tutorials
 
 #### Example #01: Set up a development stack
 
-This example shows how to setup your host and activate  full development stack. 
+This example shows how to setup your host and activate the full development stack. 
 [Go to the example](doc/examples/01-devstacksetup.md)
 
 #### Example #02: PHP Hello world application
@@ -19,7 +35,7 @@ After Example #01 is completed, we'll configure the stack's vhosts to show a hel
 
 ## Features
 
-* full php and db  centos7stack featuring nginx, php-fpm, mariadb, memcached, redis and more
+* full php and db  centos7stack featuring nginx, php-fpm, mariadb, memcached, and redis
 * based on our dxstack1-base image [(learn more...)](https://github.com/24HOURSMEDIA/docker-dxstack1-base)
 * customize nginx configuration through a mounted volume
 * store data in the container through a mounted volume
