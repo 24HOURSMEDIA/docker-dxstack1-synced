@@ -23,10 +23,10 @@ innodb_file_format=Barracuda
 
 
 # disable binlog (not a master), this is set in the 4g config..
-log-bin=
-#expire_logs_days = 10
-#max_binlog_size = 100M
-expire_logs_days = 5
+log-bin=0
+max_binlog_size = 64M
+expire_logs_days = 1
+
 
 # large query cache
 query-cache-size=128M
