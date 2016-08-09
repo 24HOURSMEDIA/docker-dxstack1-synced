@@ -1,4 +1,4 @@
-##### < docker-dxstack1-synced
+##### [< docker-dxstack1-synced](../../../README.md)
 ## example: full development stack setup
 
 

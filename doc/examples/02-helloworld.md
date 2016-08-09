@@ -1,4 +1,4 @@
-##### < docker-dxstack1-synced
+##### [< docker-dxstack1-synced](../../../README.md)
 ## example 02: php hello world application
 
 We'll configure the development stack you created in [example 01](01-devstacksetup.md) to show a hello world php application.
