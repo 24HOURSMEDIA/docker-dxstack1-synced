@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# builds the image, and runs a test container named dxstack1_base_test (removes it first if it exists)
+# builds the image, and runs a test container named dxstack1_synced_test (removes it first if it exists)
 source version.sh
 # build file
 

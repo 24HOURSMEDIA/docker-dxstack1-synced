@@ -1,4 +1,4 @@
-# docker-dxstack1-synced v1.0-rc3
+# docker-dxstack1-synced v1.0
 
 ![logo](doc/assets/logo-dx1stack-synced.png)
 
