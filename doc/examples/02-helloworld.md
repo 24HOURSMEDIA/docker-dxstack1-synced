@@ -67,6 +67,11 @@ You can now open the url in your browser and should see hello world displayed:
 You worked on the container but notice that your project files are available on the host
 too in your project directory. They will stay there even if the container is terminated.
 
+-----
+You can now go to the next example:
+Install a symfony application on a synchable directory for enhanced performance.
+[Go to the example](02-syncedsf.md)
+
 
 
 
