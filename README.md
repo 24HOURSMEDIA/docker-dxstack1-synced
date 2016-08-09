@@ -25,12 +25,12 @@ projects such as Symfony 2 and 3.
 
 ## Examples - tutorials
 
-#### Example #01: Set up a development stack
+#### [Example #01: Set up a development stack](doc/examples/01-devstacksetup.md)
 
 This example shows how to setup your host and activate the full development stack. 
 [Go to the example](doc/examples/01-devstacksetup.md)
 
-#### Example #02: PHP Hello world application
+#### [Example #02: PHP Hello world application](doc/examples/02-helloworld.md)
 
 After Example #01 is completed, we'll configure the stack's vhosts to show a hello world application. 
 [Go to the example](doc/examples/02-helloworld.md)
