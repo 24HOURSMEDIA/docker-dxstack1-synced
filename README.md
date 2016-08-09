@@ -1,9 +1,13 @@
 # docker-dxstack1-synced v1.0-rc2
 Docker DX Stack 1 Sync Edition v1.0-rc2
 
+![logo](doc/assets/logo-dx1stack-synced.png)
+
 **[STAY UP TO DATE about this product - subscribe to our email updates](http://eepurl.com/caYXEH)**
 
 [View the CHANGELOG](doc/changelog.md)
+
+
 
 ## What is docker-dxstack1-synced?
 
