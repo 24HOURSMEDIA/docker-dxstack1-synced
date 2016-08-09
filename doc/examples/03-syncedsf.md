@@ -59,6 +59,9 @@ or
 http://sfdemo.devsite:10080/app_dev.php
 
 Despite what symfony tells you, do NOT work in /opt/data-synced/sfdemo; your files will get overwritten. Use /opt/data-source/sfdemo instead!
+Also, make sure file uploads etc are stored in a safe place (/data is a good one) and let nginx point to
+that location if applicable.
+
 
 ![sf3](assets/sf3.png)
 
