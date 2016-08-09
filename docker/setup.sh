@@ -1,9 +1,16 @@
 #!/usr/bin/env sh
 
+# shell script that parses environment variables in text files
 chmod +x parse_env.sh
 
 # test environment variables
-cat test-environment | ./parse_env.sh > /tmp/test_environment
+# cat test-environment | ./parse_env.sh > /tmp/test_environment
+
+# create a symlink /source to point to the synced data (default)
+# users can change this to point to /opt/data-source alternatively
+# the purpose is to let vhost configuration just point to source, regardless wether
+# this concerns the synced data or the source data
+ln -s /opt/data-synced /source
 
 # create mountpoints
 mkdir -p $DX_VOLUME_ETC
