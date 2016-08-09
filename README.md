@@ -1,10 +1,12 @@
-# docker-dxstack1-synced v1.0-rc2
+# docker-dxstack1-synced v1.0-rc3
 
 ![logo](doc/assets/logo-dx1stack-synced.png)
 
 **[STAY UP TO DATE about this product - subscribe to our email updates](http://eepurl.com/caYXEH)**
 
 [View the CHANGELOG](doc/changelog.md)
+
+[Available on Dockerhub](https://hub.docker.com/r/24hoursmedia/dxstack1-synced/)
 
 
 
