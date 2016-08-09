@@ -1,5 +1,6 @@
 # CHANGELOG
 
+**[STAY UP TO DATE about this product - subscribe to our email updates](http://eepurl.com/caYXEH)**
 
 ### v0.0 -> v1.0
 
