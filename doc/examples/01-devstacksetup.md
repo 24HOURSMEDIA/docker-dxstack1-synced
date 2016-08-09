@@ -1,4 +1,7 @@
 ##### [< docker-dxstack1-synced](../../README.md)
+
+**[STAY UP TO DATE about this product - subscribe to our email updates](http://eepurl.com/caYXEH)**
+
 ## example: full development stack setup
 
 

@@ -14,7 +14,7 @@ nginx, php-fpm, mariadb i.e. mysql, redis and memcached running on centos 7.
 Your mysql and application data stay on the host, so you can easily discard the container (or replace with
 a new version) without data loss.
 
-### For who is docker-dxstack1-synced?
+## For who is docker-dxstack1-synced?
 
 * For advanced developers who know about docker, and how to configure nginx (and php-fpm)
 * Developers who want a full featured and high performance development stack isolated on their computer
