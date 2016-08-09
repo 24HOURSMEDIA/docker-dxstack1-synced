@@ -9,6 +9,7 @@
 [Available on Dockerhub](https://hub.docker.com/r/24hoursmedia/dxstack1-synced/)
 
 
+
 ## What is docker-dxstack1-synced?
 
 A full stack of software running in a docker container mainly for php-developers. The stack contains
