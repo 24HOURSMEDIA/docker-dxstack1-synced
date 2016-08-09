@@ -4,9 +4,9 @@
 
 **[STAY UP TO DATE about this product - subscribe to our email updates](http://eepurl.com/caYXEH)**
 
-[View the CHANGELOG](doc/changelog.md)
+[View the CHANGELOG](doc/changelog.md) [Available on Dockerhub](https://hub.docker.com/r/24hoursmedia/dxstack1-synced/)
 
-[Available on Dockerhub](https://hub.docker.com/r/24hoursmedia/dxstack1-synced/)
+[Quickstart: set up a development stack](doc/examples/01-devstacksetup.md)
 
 
 
