@@ -62,6 +62,11 @@ You can now open the url in your browser and should see hello world displayed:
  
 [http://myproject.devsite:8080](http://myproject.devsite:8080)
 
+#### And..
+
+You worked on the container but notice that your project files are available on the host
+too in your project directory. They will stay there even if the container is terminated.
+
 
 
 

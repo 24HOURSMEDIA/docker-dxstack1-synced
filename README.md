@@ -1,5 +1,5 @@
-# docker-dxstack1-synced
-Docker DX Stack 1 Sync Edition
+# docker-dxstack1-synced v1.0-rc2
+Docker DX Stack 1 Sync Edition v1.0-rc2
 
 **[STAY UP TO DATE about this product - subscribe to our email updates](http://eepurl.com/caYXEH)**
 
@@ -10,9 +10,11 @@ Docker DX Stack 1 Sync Edition
 A full stack of software running in a docker container mainly for php-developers. The stack contains
 nginx, php-fpm, mariadb i.e. mysql, redis and memcached running on centos 7.
 
-
 Your mysql and application data stay on the host, so you can easily discard the container (or replace with
 a new version) without data loss.
+
+The stack features NFS to local synced directories, boosting performance for composer
+projects such as Symfony 2 and 3.
 
 ## For who is docker-dxstack1-synced?
 
