@@ -1,4 +1,4 @@
-# docker-dxstack1-synced v1.0-rc2
+# docker-dxstack1-synced v1.0-rc3
 
 ![logo](doc/assets/logo-dx1stack-synced.png)
 
@@ -6,7 +6,7 @@
 
 [View the CHANGELOG](doc/changelog.md)
 
-
+[Available on Dockerhub](https://hub.docker.com/r/24hoursmedia/dxstack1-synced/)
 
 ## What is docker-dxstack1-synced?
 
