@@ -70,7 +70,7 @@ too in your project directory. They will stay there even if the container is ter
 -----
 You can now go to the next example:
 Install a symfony application on a synchable directory for enhanced performance.
-[Go to the example](02-syncedsf.md)
+[Go to the example](03-sfdemo.md)
 
 
 
