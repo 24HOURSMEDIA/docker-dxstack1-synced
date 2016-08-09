@@ -38,6 +38,11 @@ This example shows how to setup your host and activate the full development stac
 After Example #01 is completed, we'll configure the stack's vhosts to show a hello world application. 
 [Go to the example](doc/examples/02-helloworld.md)
 
+#### [Example #03: Symfony](doc/examples/03-syncedsf.md)
+
+Install a symfony application on a synchable directory for enhanced performance.
+[Go to the example](doc/examples/03-syncedsf.md)
+
 ## Features
 
 * full php and db  centos7stack featuring nginx, php-fpm, mariadb, memcached, and redis
