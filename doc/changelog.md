@@ -12,3 +12,4 @@
 * /source directory is now symlinked to the synced directory.
   Users can change this to point to the source directory instead;
   This allows vhosts configuration to /source directly to be changed instantly.
+* installed symfony command line command

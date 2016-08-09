@@ -23,6 +23,7 @@ adduser $DX_PHPFPM_USER
 sh webapp/setup.sh
 sh lsyncd/setup.sh
 sh php-fpm/setup.sh
+sh symfony/setup.sh
 sh phpmyadmin/setup.sh
 sh nginx/setup.sh
 sh redis/setup.sh
