@@ -1,5 +1,10 @@
-#####[< docker-dxstack1-synced](/)
+##### < docker-dxstack1-synced
 ## example: full development stack setup
+
+
+*Already walked through this example and have a development stack set up? Then move on to the [hello world php example](02-helloworld.md) where you'll configure nginx and php-fpm, and set up
+                                                                                                     the simplest application.*
+
 
 This example installs a development environment for you with NginX, PHP-FPM, MariaDB, PHPMyAdmin and more.
 
@@ -123,7 +128,13 @@ shell. (You may have to quit and startup kitematic again to view the container s
 
 ![directory structure](assets/kitematic.png)
 
-#### You should now:
+### Next
+
+*Move on to the [hello world php example](02-helloworld.md) where you'll configure nginx and php-fpm, and set up
+the simplest application.*
+
+
+### You should now:
 
 ***How to restart Nginx to update the vhosts configuration..***
 
