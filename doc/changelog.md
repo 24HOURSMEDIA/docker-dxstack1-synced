@@ -9,3 +9,6 @@
 * sync between mounted source and synced source directory now sets ownership and permissions
 * several small improvements and bugfixes
 * now runs smoothly symfony projects
+* /source directory is now symlinked to the synced directory.
+  Users can change this to point to the source directory instead;
+  This allows vhosts configuration to /source directly to be changed instantly.
