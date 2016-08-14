@@ -16,5 +16,3 @@ chown -R nginx /var/cache/nginx
 # replace nginx file
 cat ./nginx/etc/nginx.conf | ./parse_env.sh > /etc/nginx/nginx.conf
 
-cp ./nginx/etc/init.d/nginx /etc/init.d/nginx
-chmod +x /etc/init.d/nginx
